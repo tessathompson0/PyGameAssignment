@@ -9,6 +9,7 @@ import pygame
 screen = pygame.display.set_mode((width, height))
 pygame.display.flip()
 
+
 #if x (exit) is clicked
 running = True
 while running:
