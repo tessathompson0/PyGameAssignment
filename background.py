@@ -28,6 +28,7 @@ class background:
             for event in pygame.event.get():
                 if event.type == QUIT:
                     runing = False
+                    pygame.quit()
             pygame.display.update()
         pygame.quit()
     def setBackgroundMain(self):
@@ -37,6 +38,7 @@ class background:
             for event in pygame.event.get():
                 if event.type == QUIT:
                     runing = False
+                    pygame.quit()
             pygame.display.update()
         pygame.quit()
     def setYouWinBackground(self):
@@ -46,6 +48,7 @@ class background:
             for event in pygame.event.get():
                 if event.type == QUIT:
                     runing = False
+                    pygame.quit()
             pygame.display.update()
         pygame.quit()
     def setYouLoseBackground(self):
@@ -55,5 +58,6 @@ class background:
             for event in pygame.event.get():
                 if event.type == QUIT:
                     runing = False
+                    pygame.quit()
             pygame.display.update()
         pygame.quit()
