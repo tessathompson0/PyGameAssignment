@@ -14,16 +14,10 @@ from background import background
 pygame.display.set_caption('King Curtis Game')
 #pygame.display.flip()
 
-start_time = pygame.time.get_ticks()
-current_time = pygame.time.get_ticks()
 #set main screen
 main = background()
 main.setFirstBackground()
 
-current_time = pygame.time.get_ticks()
-if current_time >= 10000:
-  main.setBackgroundMain()
-  pygame.display.flip()
 
 #if x (exit) is clicked
 running = True

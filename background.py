@@ -18,7 +18,12 @@ bg_img3 = pygame.transform.scale(bg_img3,(width,height))
 
 #Background for main part of game
 bg_img4 = pygame.image.load('Background.png')
-bg_im43 = pygame.transform.scale(bg_img4,(width,height))
+bg_img4 = pygame.transform.scale(bg_img4,(width,height))
+
+#StartButton
+bg_img5 = pygame.image.load('StartGame.png')
+bg_img5 = pygame.transform.scale(bg_img5,(50,70))
+
 
 class background:
     def setFirstBackground(self):
@@ -61,3 +66,14 @@ class background:
                     pygame.quit()
             pygame.display.update()
         pygame.quit()
+    def startButton(self):
+        running = True
+        while running:
+            window.blit(bg_img5,(0,0))
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    runing = False
+                    pygame.quit()
+            pygame.display.update()
+
+         
