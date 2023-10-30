@@ -5,7 +5,7 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.image.load("Player.png").convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.center = (400,300)
-        self.speed = 5
+        self.speed = 1
     def update(self):
         keys = pygame.key.get_pressed()
         #go up

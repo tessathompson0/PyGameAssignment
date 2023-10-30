@@ -30,11 +30,13 @@ for i in range(5):
 
 score = 0
 
+background = pygame.image.load("Background.png").convert()
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+    screen.blit(background, (0,0))
     all_sprites.update()
     hits = pygame.sprite.spritecollide(player, enemies, True)
     for enemy in hits:
@@ -42,7 +44,7 @@ while running:
         new_enemy = Enemy()
         all_sprites.add(new_enemy)
         enemies.add(new_enemy)
-    screen.fill(white)
+
     all_sprites.draw(screen)
     font = pygame.font.Font(None, 36)
     score_text = font.render("Score: {}".format(score),True,(255, 0, 0))
