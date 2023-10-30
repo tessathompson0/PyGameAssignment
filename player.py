@@ -1,5 +1,5 @@
 import pygame
-class player(pygame.sprite.Sprite):
+class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         self.image = pygame.image.load("Player.png").convert_alpha()
