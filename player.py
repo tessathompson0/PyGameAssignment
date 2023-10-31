@@ -1,11 +1,13 @@
 import pygame
 class Player(pygame.sprite.Sprite):
+    #load sprite
     def __init__(self):
         super().__init__()
         self.image = pygame.image.load("Player.png").convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.center = (400,300)
         self.speed = 1
+    #make sprite move using WASD movements
     def update(self):
         keys = pygame.key.get_pressed()
         #go up
